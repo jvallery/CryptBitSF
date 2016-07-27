@@ -1,0 +1,127 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CryptBit</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/site.css" rel="stylesheet" />
+    <script src="/Scripts/modernizr-2.6.2.js"></script>  
+    
+
+
+
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">CryptBit</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Help">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+
+
+
+        <div class="jumbotron">
+
+            <div id="dropZoneContainer">
+                <div class="dropzone needsclick dz-clickable" id="dropzoneForm">
+                    <div>
+                        <div class="dz-message needsclick">
+                            Drop files here or click to upload.<br />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" id="submit-all">Upload, zip, and encrypt</button>
+                </div>
+
+            </div>
+
+            <div id="archiveDownloadPending">
+                <img src="/Content/gears.svg" /><br />
+                Your upload is complete.  Give us a few minutes to zip and encrypt.  Once complete the URL to download your archive will show up here.<br />
+                <div id="archiveDownloadStatus" />
+            </div>
+
+
+
+
+        </div>
+        <div id="archiveDownloadComplete">
+
+            Your archive is ready.   You can share this URL for the next 24 hours.
+            <div id="archiveDownloadUrl" />
+        </div>
+
+
+
+
+        <hr />
+        <footer>
+            <p>&copy; 2016 - CryptBit</p>
+        </footer>
+    </div>
+
+   
+
+
+    <link href="/Content/dropzone/basic.css" rel="stylesheet" />
+    <link href="/Content/dropzone/dropzone.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+    <script src="/Scripts/respond.js"></script>
+    <script src="/Scripts/dropzone/dropzone.js"></script>
+    <script src="/Scripts/upload.js"></script>
+
+
+    <style type="text/css">
+        #dropzoneForm {
+            margin-bottom: 3rem;
+        }
+
+        #archiveDownloadPending {
+            display: none;
+        }
+
+        #archiveDownloadComplete {
+            display: none;
+        }
+
+
+        .dropzone {
+            border: 2px dashed #0087F7;
+            border-radius: 5px;
+            background: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+            .dropzone .dz-message {
+                font-weight: 400;
+            }
+
+                .dropzone .dz-message .note {
+                    font-size: 0.8em;
+                    font-weight: 200;
+                    display: block;
+                    margin-top: 1.4rem;
+                }
+    </style>
+
+</body>
+</html>
