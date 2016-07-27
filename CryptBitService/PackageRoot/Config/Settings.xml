@@ -8,11 +8,11 @@
   -->
   <Section Name="CryptBitConfig">
     <Parameter Name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" Value="UseDevelopmentStorage=true" />
-    <Parameter Name="StorageConnectionString" Value="" />
-    <Parameter Name="AppInsightsInstrumentationKey" Value="" />
-    <Parameter Name="aadClientId" Value="" />
-    <Parameter Name="aadClientSecret" Value="" />
-    <Parameter Name="kvVaultUri" Value="" />
-    <Parameter Name="APPINSIGHTS_INSTRUMENTATIONKEY" Value="" />
+    <Parameter Name="StorageConnectionString" Value="DefaultEndpointsProtocol=https;AccountName=cryptbitsf;AccountKey=Royd63Jr+GsRMIEqrVzEfviwKUfu3SCDmvNzNsiO/1qOS9xqhtZz/TmUKX89uEPU+5nGIOEMYYEpDvgH3txYqw==" />
+    <Parameter Name="AppInsightsInstrumentationKey" Value="6b28e78d-6bf2-41d1-a1c1-6920b9d65c3e" />
+    <Parameter Name="aadClientId" Value="1b6f17bf-9e1d-46aa-9fee-eee51ec91679" />
+    <Parameter Name="aadClientSecret" Value="0wOFl8XBha/AsvMafHvhNTq3f8hIh5Z/IpsdODIHH6M=" />
+    <Parameter Name="kvVaultUri" Value="https://cryptbit.vault.azure.net" />
+    <Parameter Name="APPINSIGHTS_INSTRUMENTATIONKEY" Value="028cb54b-43f5-4761-bc3f-03181acd9fa3" />
   </Section>
 </Settings>

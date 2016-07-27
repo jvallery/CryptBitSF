@@ -23,8 +23,7 @@ namespace CryptBitWeb
 
             System.Net.ServicePointManager.DefaultConnectionLimit = 256;
             
-            //FormatterConfig.ConfigureFormatters(config.Formatters);
-
+           
             PhysicalFileSystem physicalFileSystem = new PhysicalFileSystem(@".\wwwroot");
             FileServerOptions fileOptions = new FileServerOptions();
 

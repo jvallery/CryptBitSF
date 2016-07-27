@@ -20,7 +20,17 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  
+
+  <ClusterConnectionParameters ConnectionEndpoint="cryptbit.westcentralus.cloudapp.azure.com:19000"
+                               X509Credential="true"
+                               ServerCertThumbprint="89C4F7D05F5D15718B3DEBB62E2A792C7761FBD2"
+                               FindType="FindByThumbprint"
+                               FindValue="89C4F7D05F5D15718B3DEBB62E2A792C7761FBD2"
+                               StoreLocation="CurrentUser"
+                               StoreName="My" />
   
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
+  <UpgradeDeployment Mode="Monitored" Enabled="false">
+    <Parameters FailureAction="Rollback" Force="True" />
+  </UpgradeDeployment>
 </PublishProfile>
