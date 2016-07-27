@@ -19,7 +19,7 @@
       <ConfigOverride Name="Config">
         <Settings>
           <Section Name="CryptBitConfig">
-            <Parameter Name="StorageConnectionString" Value="DefaultEndpointsProtocol=https;AccountName=cryptbitsf;AccountKey=Royd63Jr+GsRMIEqrVzEfviwKUfu3SCDmvNzNsiO/1qOS9xqhtZz/TmUKX89uEPU+5nGIOEMYYEpDvgH3txYqw==" />
+            <Parameter Name="StorageConnectionString" Value="" />
           </Section>
         </Settings>
       </ConfigOverride>
